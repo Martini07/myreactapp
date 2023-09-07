@@ -2,9 +2,9 @@
 // SPDX-License-Identifier: MIT-0
 
 import React, {useEffect, useState, Fragment} from "react";
-import Amplify, {Auth, Hub} from "aws-amplify";
+import {Auth, Hub} from "aws-amplify";
 import {Container} from "react-bootstrap";
-
+import { Amplify } from "aws-amplify";
 import Navigation from "./components/Navigation.js";
 import FederatedSignIn from "./components/FederatedSignIn.js";
 import MainRequest from "./components/MainRequest.js";
