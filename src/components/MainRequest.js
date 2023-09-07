@@ -13,6 +13,7 @@ function MainRequest(props) {
     setShow(true);
     const response = await getData();
     setJson(response);
+    alert(response);
   }
 
   function handleClose() {
@@ -23,14 +24,16 @@ function MainRequest(props) {
   function getData() {
     const apiName = "HelloAPI";
     const path = "/hola";
+    var body = JSON.stringify({"firstName":"Francesco","lastName":"Martini"});
     const myInit = {
+      body: body, 
       headers: {
         Accept: "application/json",
         "Content-Type": "application/json",
         Authorization: props.token
       }
     };
-    return API.get(apiName, path, myInit);
+    return API.post(apiName, path, myInit);
   }
 
   return (
