@@ -16,7 +16,7 @@ Amplify.configure({
     userPoolId: "eu-west-1_tPV5Iolro",
     userPoolWebClientId: "60a1thkpk9oidur587npi9l9f6",
     oauth: {
-      domain: "https://ffmarti-domain.auth.eu-west-1.amazoncognito.com",
+      domain: "ffmarti-domain.auth.eu-west-1.amazoncognito.com",
       scope: ["email", "openid", "aws.cognito.signin.user.admin", "profile"],
       redirectSignIn: "https://main.d1dr6t0vuawcp3.amplifyapp.com/",
       redirectSignOut: "https://main.d1dr6t0vuawcp3.amplifyapp.com/",
