@@ -21,7 +21,7 @@ function MainRequest(props) {
   }
 
   function getData() {
-    const apiName = "MyBlogPostAPI";
+    const apiName = "HelloAPI";
     const path = "/hola";
     const myInit = {
       headers: {
