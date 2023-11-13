@@ -1,5 +1,5 @@
 dashboards:
-  SECURITY KPI:
+ security-kpi:
     dependsOn:
       datasets:
       - kpi_guardduty
